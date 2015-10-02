@@ -1,8 +1,10 @@
 var totals = 0;
+var quests = ['Can I swim?', 'Can I fly?', 'Can I dance?'];
+var userInput = ['YES', 'Y']
 
 function q1() {
-  var question1 = prompt("Can I swim?");
-  if (question1.toUpperCase() ==='YES' || question1.toUpperCase() === 'Y') {
+  var question1 = prompt(quests[0]);
+  if (question1.toUpperCase() === userInput[0] || question1.toUpperCase() === userInput[1]) {
     one.innerHTML = 'Correct! You never know when you are going to fall into the water.';
     totals++;
   } else {
@@ -11,8 +13,8 @@ function q1() {
   console.log("swimming response: " + question1);
 }
 function q2 () {
-  var question2 = prompt("Can I fly?");
-  if (question2.toUpperCase() === 'YES' || question2.toUpperCase() === 'Y') {
+  var question2 = prompt(quests[1]);
+  if (question2.toUpperCase() === userInput[0] || question2.toUpperCase() === userInput[1]) {
    two.innerHTML = ' That\'s right, I am magic !!!';
     totals++;
   } else {
@@ -21,8 +23,8 @@ function q2 () {
   console.log("flying response: " + question2);
 }
 function q3 () {
-    var question3 = prompt("Can I dance?")
-  if (question3.toUpperCase() === 'YES' || question3.toUpperCase() === 'Y') {
+    var question3 = prompt(quests[2]);
+  if (question3.toUpperCase() === userInput[0]  || question3.toUpperCase() === userInput[1]) {
     three.innerHTML = 'Hell yeah I can !!!';
     totals++;
   } else {
