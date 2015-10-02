@@ -1,32 +1,37 @@
 var totals = 0;
+var quests = ['Can I swim?', 'Can I fly?', 'Can I dance?'];
+var userInput = ['YES', 'Y'];
 
 function q1() {
-  var question1 = prompt("Can I swim?");
-  if (question1.toUpperCase() ==='YES' || question1.toUpperCase() === 'Y') {
-    one.innerHTML = 'Correct! You never know when you are going to fall into the water.';
+  var question1 = prompt(quests[0]);
+  if (question1.toUpperCase() === userInput[0] || question1.toUpperCase() === userInput[1]) {
+    oneY.innerHTML = 'Correct! You never know when you are going to fall into the water.';
+    pic1.innerHTML = '<img src="images/Swimming-baby1.jpg" width="200"/>';
     totals++;
   } else {
-    one.innerHTML = 'Incorrect, sorry. That\'s a fundamental skill we ALL should know. No?';
+    oneN.innerHTML = 'Incorrect, sorry. That\'s a fundamental skill we ALL should know. No?';
   }
   console.log("swimming response: " + question1);
 }
 function q2 () {
-  var question2 = prompt("Can I fly?");
-  if (question2.toUpperCase() === 'YES' || question2.toUpperCase() === 'Y') {
-   two.innerHTML = ' That\'s right, I am magic !!!';
+  var question2 = prompt(quests[1]);
+  if (question2.toUpperCase() === userInput[0] || question2.toUpperCase() === userInput[1]) {
+   twoY.innerHTML = ' That\'s right, I am magic !!!';
+   pic2.innerHTML = '<img src = "images/flying-dream.jpg" width="200"/>';
     totals++;
   } else {
-    two.innerHTML = 'Understandable mistake, but I just happen to be lucky like that.';
+    twoN.innerHTML = 'Understandable mistake, but I just happen to be lucky like that.';
   }
   console.log("flying response: " + question2);
 }
 function q3 () {
-    var question3 = prompt("Can I dance?")
-  if (question3.toUpperCase() === 'YES' || question3.toUpperCase() === 'Y') {
-    three.innerHTML = 'Hell yeah I can !!!';
+    var question3 = prompt(quests[2]);
+  if (question3.toUpperCase() === userInput[0]  || question3.toUpperCase() === userInput[1]) {
+    threeY.innerHTML = 'Hell yeah I can !!!';
+    pic3.innerHTML = '<img src = "images/dancing.jpg" width="200"/>';
     totals++;
   } else {
-    three.innerHTML = 'Really? Humph. I\'m kind of offended.';
+    threeN.innerHTML = 'Really? Humph. I\'m kind of offended.';
   }
   console.log("dancing response: " + question3);
 }

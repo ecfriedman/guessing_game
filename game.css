@@ -1,0 +1,17 @@
+body {
+	background-color: gray;
+	font-family: Courier
+}
+
+.Correct {
+	color: green;
+}
+
+.Wrong {
+	color: red;
+}
+
+h2 {
+	
+	color: yellow;
+}
